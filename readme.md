@@ -1,2 +1,2 @@
-Encabezado en primera | En segundo lugar Header
+HOLA MUNDO | HELLO WORLD
 ------------ | -------------
