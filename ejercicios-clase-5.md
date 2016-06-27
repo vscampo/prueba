@@ -1,3 +1,6 @@
+<!-- Ejercicio 1 -->
+
+
 var numeroUno = 22;
 var numeroDos = 48;
 
@@ -9,3 +12,12 @@ var numeroDos = 48;
     } else {
         console.log("Ambos son iguales");
     }
+
+
+var numeroUno = 22;
+var numeroDos = 48;
+var casoUno = numeroUno > numeroDos;
+var casoDos = numeroDos > numeroUno;
+
+    console.info(casoUno ? "Numero uno es mayor" : casoDos ? "Numero Dos es mayor" : "Son iguales");
+
