@@ -34,3 +34,42 @@ switch (true) {
     console.log("Ambos son iguales");
 }
 
+
+<!-- Ejercicio 2 -->
+
+var numeroUno = 22;
+var numeroDos = 48;
+var numeroTres = 34
+
+if (numeroUno > numeroDos & numeroUno > numeroTres) {
+    console.log(numeroUno + " es mayor que " + numeroDos + " y " + numeroTres);
+} else if (numeroDos > numeroUno & numeroDos > numeroTres){
+    console.log(numeroDos + " es mayor que " + numeroUno + " y " + numeroTres);
+} else {
+    console.log("Número tres es mayor");
+}
+
+
+
+var numeroUno = 22;
+var numeroDos = 48;
+var numeroTres = 34;
+
+    console.info(numeroUno > numeroDos & numeroUno > numeroDos ? "Numero uno es mayor" : numeroDos > numeroUno & numeroDos > numeroTres ? "Numero Dos es mayor" : "Numero tres es mayor");
+    
+
+
+var numeroUno = 22;
+var numeroDos = 48;
+var numeroTres = 34;
+switch (true) {
+  case numeroUno > numeroDos & numeroUno > numeroTres:
+    console.log(numeroUno + " es mayor que " + numeroDos + " y" + numeroTres);
+    break;
+  case numeroDos > numeroUno & numeroDos > numeroTres:
+    console.log(numeroDos + " es mayor que " + numeroUno + " y" + numeroTres);
+    break;
+  default:
+    console.log(numeroTres + " es mayor que " + numeroUno + " y" + numeroDos);
+}
+
