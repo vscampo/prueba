@@ -16,8 +16,21 @@ var numeroDos = 48;
 
 var numeroUno = 22;
 var numeroDos = 48;
-var casoUno = numeroUno > numeroDos;
-var casoDos = numeroDos > numeroUno;
 
-    console.info(casoUno ? "Numero uno es mayor" : casoDos ? "Numero Dos es mayor" : "Son iguales");
+    console.info(numeroUno > numeroDos ? "Numero uno es mayor" : numeroDos > numeroUno ? "Numero Dos es mayor" : "Son iguales");
+    
+    
+
+var numeroUno = 22;
+var numeroDos = 48;
+switch (true) {
+  case numeroUno > numeroDos:
+    console.log(numeroUno + " es mayor que " + numeroDos);
+    break;
+  case numeroDos > numeroUno:
+    console.log(numeroDos + " es mayor que " + numeroUno);
+    break;
+  default:
+    console.log("Ambos son iguales");
+}
 
