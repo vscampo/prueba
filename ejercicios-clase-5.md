@@ -86,4 +86,26 @@ if (numeroUno < 0) {
     } else {  
         console.log(numeroUno*numeroDos*numeroTres + "Es el resultado de multiplicar los tres números");  
     }  
+    
+    
+
+**EJERCICIO 4**
+
+var mes = prompt("¿En que mes estamos?");  
+var dia = prompt("¿En que día estamos?");  
+var precio = prompt("¿Cuanto vale el producto?");
+
+var descuento = 25*precio/100;  
+var precioDescuento = precio - descuento;  
+
+if( mes === "Diciembre" || mes === "Enero" || mes === "Febrero") {  
+	if (dia === "Viernes" || dia === "Sabado" || dia === "Domingo") {  
+	console.log("No se aplica descuento, debes pagar " , precio);  
+	} else {  
+	console.log ("BINGO! Has acertado de mes y días. Debes pagar solamente " , precioDescuento);  
+		}   
+	}  
+	else{  
+		console.log("No se aplica descuento.. ven en invierno mejor!. Debes pagar " , precio );  
+	};  
 
