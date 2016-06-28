@@ -1,4 +1,4 @@
-<!-- Ejercicio 1 -->
+**EJERCICIO 1**
 
 
 var numeroUno = 22;  
@@ -35,7 +35,7 @@ switch (true) {
 }  
 
 
-<!-- Ejercicio 2 -->
+**EJERCICIO 2**
 
 var numeroUno = 22;  
 var numeroDos = 48;  
