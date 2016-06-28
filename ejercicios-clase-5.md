@@ -73,3 +73,17 @@ switch (true) {
     console.log(numeroTres + " es mayor que " + numeroUno + " y" + numeroDos);  
 }  
 
+
+
+**EJERCICIO 3**
+
+var numeroUno = 12;  
+var numeroDos = -3;  
+var numeroTres = 24;  
+
+if (numeroUno < 0) {  
+        console.log(numeroDos + numeroTres + " El número es negativo y se suman " + numeroDos + " y " + numeroTres);  
+    } else {  
+        console.log(numeroUno*numeroDos*numeroTres + "Es el resultado de multiplicar los tres números");  
+    }  
+
