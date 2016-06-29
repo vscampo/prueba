@@ -70,3 +70,36 @@ if(control > 3) {
 	console.log("Has acabado lo 3 intentos");  
 }  
 
+
+
+**EJERCICIO 2**
+
+console.log("Empieza la cuenta!");  
+
+for (var control = 1; control <= 100; control++) {  
+	console.log (control);  
+}  
+console.log("Aquí termina la cuenta");  
+
+
+
+console.log("Empieza la cuenta!");  
+
+var control = 1;  
+while (control <= 100) {  
+    console.log(control);  
+    control++;  
+};  
+console.log("Aquí termina la cuenta");  
+
+
+
+console.log("Empieza la cuenta!");  
+
+var control = 1;  
+do {  
+   control++;  
+   console.log(control);  
+} while (control < 100);  
+console.log("Aquí termina la cuenta");  
+
