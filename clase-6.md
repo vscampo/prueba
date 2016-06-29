@@ -168,3 +168,55 @@ do {
    console.log(control);  
 } while (control < 100);  
 console.log("Aquí termina la cuenta");  
+
+
+
+
+**EJERCICIO 5**
+
+var numero = prompt("Dame un número:");  
+
+console.log("Empieza la cuenta!");  
+
+for (var control = 0; control <= 50; ) {  
+	if(numero % 2 !== 0) {  
+	console.log(numero);  
+	control++;  
+	}  
+	numero++;  
+}  
+console.log("Aquí termina la cuenta");  
+
+
+
+
+var numero = prompt("Dame un número:");  
+var control = 0;  
+
+console.log("Empieza la cuenta atras!")  
+
+while(control <= 50) {  
+	if(numero % 2 !== 0) {  
+	console.log(numero);  
+	control++;  
+	}   
+	numero++;  
+}  
+console.log("Aquí termina la cuenta");  
+
+
+
+
+var numero = prompt("Dame un número:");  
+var control = 0;  
+
+console.log("Empieza la cuenta atras!")  
+
+do {  
+   if(numero % 2 !== 0) {  
+	console.log(numero);  
+	control++;  
+	}   
+	numero++;  
+} while (control <= 50);  
+console.log("Aquí termina la cuenta");  
