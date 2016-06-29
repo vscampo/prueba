@@ -137,3 +137,34 @@ do {
 } while (control >= 1);  
 console.log("Aquí termina la cuenta");  
 
+
+**EJERCICIO 4**
+
+console.log("Empieza la cuenta pares!");  
+
+for (var control = 0; control <= 100; control+=2) {  
+	console.log (control);  
+}  
+console.log("Aquí termina la cuenta");  
+
+
+
+console.log("Empieza la cuenta pares!");  
+
+var control = 0;  
+while (control <= 100) {  
+    console.log(control);  
+    control+=2;  
+};  
+console.log("Aquí termina la cuenta");  
+
+
+
+console.log("Empieza la cuenta pares!");  
+
+var control = 0;  
+do {  
+   control+=2;  
+   console.log(control);  
+} while (control < 100);  
+console.log("Aquí termina la cuenta");  
