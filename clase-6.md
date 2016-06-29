@@ -103,3 +103,37 @@ do {
 } while (control < 100);  
 console.log("Aquí termina la cuenta");  
 
+
+**EJERCICIO 3**
+
+console.log("Empieza la cuenta atras!");  
+
+for (var control = 100; control >= 0 ; control--) {  
+	console.log (control);  
+}
+console.log("Aquí termina la cuenta atras");  
+
+
+
+
+console.log("Empieza la cuenta!");  
+
+var control = 100;  
+while (control >= 0) {  
+    console.log(control);  
+    control--;  
+};
+console.log("Aquí termina la cuenta");  
+
+
+
+
+console.log("Empieza la cuenta!");  
+
+var control = 101;  
+do {  
+   control--;  
+   console.log(control);  
+} while (control >= 1);  
+console.log("Aquí termina la cuenta");  
+
