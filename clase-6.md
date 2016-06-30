@@ -178,10 +178,9 @@ var numero = prompt("Dame un número:");
 
 console.log("Empieza la cuenta!");  
 
-for (var control = 0; control <= 50; ) {  
+for (var control = 0; control <= 50;control++ ) {  
 	if(numero % 2 !== 0) {  
 	console.log(numero);  
-	control++;  
 	}  
 	numero++;  
 }  
