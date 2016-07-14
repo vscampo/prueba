@@ -28,8 +28,56 @@ var maquina = {
     }
 
     agregarEliminar: {
-        agregar: function(clave, datos) {
-            
+        function asignar(nombre) {
+            var registrado = false;
+            var vacante = false;
+
+            for (var i = 0; i < lista.length; i++) {
+                if (lista[i] === undefined) {
+                    vacante = i;
+                }
+                if (lista[i] === nombre) {
+                    registrado = i;
+                }
+            }
+
+            if (registrado || registrado === 0) {
+                console.warn("Ya estabas registrado!");
+                console.info("Eres el asistente número", registrado);
+            } else {
+                if (vacante || vacante === 0) {
+                    lista[vacante] = nombre;
+                    console.info("Eres el asistente número", vacante);
+                    console.info("Felicidades! has ocupado un asiento que estaba vacio.");
+                } else {
+                    lista.push(nombre);
+                    console.info("Eres el asistente número", lista.length - 1);
+                    console.info("No quedan asientos vacios antes que el tuyo.");
+                }
+            }
+
+        },
+
+        function quitar(nombre) {
+            var registrado = false;
+
+            for (var i = 0; i < lista.length; i++) {
+                //console.log("pase por aqui...");
+                //console.log(lista[i]);
+                if (lista[i] === nombre) {
+                    registrado = i;
+                }
+            }
+
+            //console.log(registrado);
+
+            if (registrado || registrado === 0) {
+                lista[registrado] = undefined;
+                console.info("El asistente " + nombre + " ha sido eliminado.");
+                console.info("El asiento " + registrado + " esta vacio.");
+            } else {
+                console.warn("El asistente " + nombre + "... no existe!");
+            }
         }
 
     }
