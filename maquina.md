@@ -29,58 +29,74 @@ var maquina = {
 
     agregarEliminar: {
         function asignar(nombre) {
-            var registrado = false;
-            var vacante = false;
+            var usuario = false;
 
-            for (var i = 0; i < lista.length; i++) {
-                if (lista[i] === undefined) {
+            for (var i = 0; i < clientes.length; i++) {
+                if (clientes[i] === undefined) {
                     vacante = i;
                 }
-                if (lista[i] === nombre) {
-                    registrado = i;
+                if (clientes[i] === nombre) {
+                    usuario = i;
                 }
             }
 
-            if (registrado || registrado === 0) {
+            if (usuario || usuario === 0) {
                 console.warn("Ya estabas registrado!");
-                console.info("Eres el asistente número", registrado);
+                console.info("Eres el usuario", usuario);
             } else {
                 if (vacante || vacante === 0) {
-                    lista[vacante] = nombre;
-                    console.info("Eres el asistente número", vacante);
-                    console.info("Felicidades! has ocupado un asiento que estaba vacio.");
-                } else {
-                    lista.push(nombre);
-                    console.info("Eres el asistente número", lista.length - 1);
-                    console.info("No quedan asientos vacios antes que el tuyo.");
+                    clientes[vacante] = nombre;
+                    console.info("Eres el usuario ", vacante);
+                    console.info("Felicidades!");
                 }
             }
 
         },
 
         function quitar(nombre) {
-            var registrado = false;
+            var usuario = false;
 
-            for (var i = 0; i < lista.length; i++) {
-                //console.log("pase por aqui...");
-                //console.log(lista[i]);
-                if (lista[i] === nombre) {
-                    registrado = i;
+            for (var i = 0; i < clientes.length; i++) {
+                if (clientes[i] === nombre) {
+                    usuario = i;
                 }
             }
 
-            //console.log(registrado);
-
-            if (registrado || registrado === 0) {
-                lista[registrado] = undefined;
-                console.info("El asistente " + nombre + " ha sido eliminado.");
-                console.info("El asiento " + registrado + " esta vacio.");
+            if (usuario || usuario === 0) {
+                clientes[usuario] = undefined;
+                console.info("El usuario " + nombre + " ha sido eliminado.");
             } else {
-                console.warn("El asistente " + nombre + "... no existe!");
+                console.warn("El usuario " + nombre + "... no existe!");
             }
         }
 
     }
+
+    consultaProductos: {
+        saldos: function(clave, usuario) {
+                    var producto = -1;
+                    for (var i = 0; i < clientes.length; i++) {
+                        if (clientes[i].usuario === usuario && clientes[i].password === clave) {
+                            producto = clientes[i].presupuesto;
+                            break;
+                        }
+                    }
+                    return producto;
+        },
+        gastos: function(clave, usuario) {
+            var gasto = false;
+            for (var i = 0, i < clientes.length; i++) {
+                if (clientes[i].usuario === usuario && clientes[i].password === clave) {
+                    gasto = clientes[i].gastos;
+                    break;
+                }   
+
+            }
+
+            return gasto;
+        }
+    }
+
 };
 
 var clientes = [{
@@ -124,6 +140,3 @@ var productos = [{
     stock: 10,
     precio: 30
 }];
-
-
-
